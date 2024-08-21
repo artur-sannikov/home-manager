@@ -25,10 +25,6 @@
     ansible
     ansible-lint
     mediainfo
-
-    python312.withPackages (p: with p; [
-    mutagen
-    ]
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
