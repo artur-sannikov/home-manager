@@ -72,5 +72,22 @@
   };
 
   # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  programs = {
+    home-manager = {
+      enable = true;
+    };
+
+    zsh = {
+      enable = true;
+      history = {
+        path = "$HOME/.histfile";
+        save = 10000;
+        size = 10000;
+      };
+      oh-my-zsh = {
+        enable = true;
+        theme = "gnzh";
+      };
+  };
+  };
 }
