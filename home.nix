@@ -17,7 +17,8 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
+  home.packages = with pkgs; [
+    nixfmt-rfc-style
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
@@ -87,8 +88,13 @@
       oh-my-zsh = {
         enable = true;
         theme = "gnzh";
-        plugins = ["git" "toolbox" "z" "podman"];
+        plugins = [
+          "git"
+          "toolbox"
+          "z"
+          "podman"
+        ];
       };
-  };
+    };
   };
 }
