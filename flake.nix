@@ -24,6 +24,10 @@
           inherit pkgs;
           modules = [ ./hosts/asus-dx.nix ];
         };
+        ty = home-manager.lib.homeManagerConfiguration {
+          inherit pkgs;
+          modules = [ ./hosts/ty.nix ];
+        };
       };
     };
 }
