@@ -1,11 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
-  home.username = "artur";
-  home.homeDirectory = "/home/artur";
-
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -79,29 +74,13 @@
   };
 
   imports = [
-    ../common/common.nix
+    ./common/common.nix
     ];
 
   # Let Home Manager install and manage itself.
   programs = {
     home-manager = {
       enable = true;
-    };
-
-    git = {
-      enable = true;
-      userName = "Artur Sannikov";
-      userEmail = "40318410+artur-sannikov@users.noreply.github.com";
-      extraConfig = {
-        url = {
-          "git@github.com:" = {
-            insteadOf = "https://github.com/";
-          };
-        };
-        user.signingKey = "/home/artur/.ssh/git-sign.pub";
-        commit.gpgsign = "true";
-        gpg.format = "ssh";
-      };
     };
 
     zsh = {
