@@ -96,6 +96,7 @@
         };
         user.signingKey = "/home/artur/.ssh/git-sign.pub";
         commit.gpgsign = "true";
+        gpg.format = "ssh";
       };
     };
 
