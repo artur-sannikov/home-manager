@@ -4,6 +4,6 @@
   home.homeDirectory = "/home/artur";
 
   imports = [
-    ./git.nix
+    ./packages/git.nix
   ];
 }
