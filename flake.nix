@@ -22,7 +22,7 @@
       homeConfigurations = {
         asus-dx = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
-          modules = [ ./home.nix ];
+          modules = [ ./hosts/asus-dx.nix ];
         };
       };
     };
