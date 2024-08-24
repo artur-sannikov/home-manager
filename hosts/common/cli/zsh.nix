@@ -9,7 +9,6 @@
       };
       oh-my-zsh = {
         enable = true;
-        theme = "gnzh";
         plugins = [
           "git"
           "toolbox"
