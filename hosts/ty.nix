@@ -134,6 +134,7 @@
       update.onActivation = true;
       packages = [
         "org.videolan.VLC"
+        "org.kde.okular"
         "org.zotero.Zotero"
       ];
     };
