@@ -9,13 +9,18 @@
       url = "github:nix-community/home-manager/release-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-      # Declarative Nix Flatpaks
+    # Declarative Nix Flatpaks
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
   };
 
   outputs =
-    { nixpkgs, home-manager, nix-flatpak, ... }:
+    {
+      nixpkgs,
+      home-manager,
+      nix-flatpak,
+      ...
+    }:
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
