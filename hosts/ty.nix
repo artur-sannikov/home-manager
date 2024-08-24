@@ -83,30 +83,6 @@
     home-manager = {
       enable = true;
     };
-    # zsh shell
-    zsh = {
-      defaultKeymap = "emacs";
-      enableCompletion = true;
-      history = {
-        ignoreAllDups = true;
-        ignoreDups = true;
-        ignoreSpace = true;
-        save = 5000;
-        share = true;
-        size = 1000;
-      };
-      enable = true;
-      oh-my-zsh = {
-        enable = true;
-        theme = "gnzh";
-        plugins = [
-          "git"
-          "podman"
-          "toolbox"
-          "z"
-        ];
-      };
-    };
     # git
     git = {
       enable = true;
