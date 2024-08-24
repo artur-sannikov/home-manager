@@ -8,6 +8,9 @@
   # You should not change this value, even if you update Home Manager. If you do
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
+  home.username = "artur";
+  home.homeDirectory = "/home/artur";
+
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
   # The home.packages option allows you to install Nix packages into your
@@ -73,9 +76,7 @@
     # EDITOR = "emacs";
   };
 
-  imports = [
-    ./common/common.nix
-    ];
+  imports = [ ./common/common.nix ];
 
   # Let Home Manager install and manage itself.
   programs = {
@@ -108,7 +109,21 @@
       enable = true;
       update.onActivation = true;
       packages = [
+        "ch.protonmail.protonmail-bridge"
+        "com.brave.Browser"
+        "com.calibre_ebook.calibre"
+        "com.github.tchx84.Flatseal"
+        "com.protonvpn.www"
+        "eu.betterbird.Betterbird"
+        "io.freetubeapp.FreeTube"
         "org.signal.Signal"
+        "org.videolan.VLC"
+        "org.zotero.Zotero"
+        {
+          appId = "us.zoom.Zoom";
+          origin = "flathub";
+          commit = "b9505f108b5f9acb2bbad83ac66f97b42bc6a75b9c28ed7b75dec1040e013305";
+        } # Screen sharing is broken on Plasma on newer versions
       ];
     };
   };
