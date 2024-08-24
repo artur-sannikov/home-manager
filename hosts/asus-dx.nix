@@ -76,7 +76,7 @@
     # EDITOR = "emacs";
   };
 
-  imports = [ ./common/common.nix ];
+  imports = [ ./common/home.nix ];
 
   # Let Home Manager install and manage itself.
   programs = {
