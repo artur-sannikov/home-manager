@@ -3,9 +3,11 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
-
+    enableBashIntegration = true;
     settings = {
       add_newline = false;
+      format = "$username$directory$git_branch$git_state$git_status";
+      right_format = "$cmd_duration";
       username = {
         disabled = false;
         show_always = true;

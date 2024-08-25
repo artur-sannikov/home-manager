@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "catppuccin-starship": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1723819937,
+        "narHash": "sha256-t/Hmd2dzBn0AbLUlbL8CBt19/we8spY5nMP0Z+VPMXA=",
+        "owner": "catppuccin",
+        "repo": "starship",
+        "rev": "3c4749512e7d552adf48e75e5182a271392ab176",
+        "type": "github"
+      },
+      "original": {
+        "owner": "catppuccin",
+        "repo": "starship",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -52,6 +68,7 @@
     },
     "root": {
       "inputs": {
+        "catppuccin-starship": "catppuccin-starship",
         "home-manager": "home-manager",
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs"
