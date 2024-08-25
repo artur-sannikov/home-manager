@@ -5,6 +5,7 @@
     enableZshIntegration = true;
 
     settings = {
+      add_newline = false;
       username = {
         disabled = false;
         show_always = true;
@@ -15,7 +16,8 @@
         error_symbol = "[✗](bold red)";
       };
       directory = {
-        read_only = "";
+        read_only = "🔒";
+        truncate_to_repo = false;
       };
     };
   };
