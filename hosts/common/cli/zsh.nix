@@ -2,6 +2,9 @@
   programs = {
     zsh = {
       enable = true;
+      syntaxHighlighting = {
+        enable = true;
+      };
       history = {
         path = "$HOME/.histfile";
         save = 10000;
