@@ -85,25 +85,6 @@
     home-manager = {
       enable = true;
     };
-    # git
-    git = {
-      enable = true;
-      userName = "Artur Sannikov";
-      userEmail = "40318410+artur-sannikov@users.noreply.github.com";
-      extraConfig = {
-        user.signingKey = "/home/artur/.ssh/git-sign.pub";
-        commit.gpgsign = true;
-        diff = {
-          algorithm = "histogram";
-          colorMoved = "default";
-        };
-        gpg.format = "ssh";
-        credential.helper = "cache";
-        merge.conflictstyle = "zdiff3";
-        init.defaultBranch = "main";
-        push.autoSetupRemote = "true";
-      };
-    };
   };
   # Flatpak
   services = {
