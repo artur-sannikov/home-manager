@@ -63,6 +63,7 @@
         "it.mijorus.gearlever"
         "md.obsidian.Obsidian"
         "org.audacityteam.Audacity"
+        "org.qbittorrent.qBittorrent"
         "org.kde.okular"
         "org.onlyoffice.desktopeditors"
         "org.signal.Signal"
