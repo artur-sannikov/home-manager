@@ -65,6 +65,7 @@
         "org.audacityteam.Audacity"
         "org.qbittorrent.qBittorrent"
         "org.fedoraproject.MediaWriter"
+        "org.kde.isoimagewriter"
         "org.kde.okular"
         "org.onlyoffice.desktopeditors"
         "org.signal.Signal"
