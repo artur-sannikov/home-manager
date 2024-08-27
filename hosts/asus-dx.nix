@@ -64,6 +64,7 @@
         "md.obsidian.Obsidian"
         "org.audacityteam.Audacity"
         "org.qbittorrent.qBittorrent"
+        "org.fedoraproject.MediaWriter"
         "org.kde.okular"
         "org.onlyoffice.desktopeditors"
         "org.signal.Signal"
