@@ -17,7 +17,6 @@
   # environment.
   home.packages = with pkgs; [
     mat2
-    R
     devbox
     gnumake
     nixfmt-rfc-style

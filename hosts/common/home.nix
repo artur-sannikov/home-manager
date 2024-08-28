@@ -6,6 +6,7 @@
     ./cli/git.nix
     ./cli/zsh.nix
     ./cli/starship.nix
+    ./cli/R.nix
     ./gui/vscodium.nix
   ];
 }
