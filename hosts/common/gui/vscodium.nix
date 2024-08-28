@@ -3,9 +3,10 @@
   programs.vscode = {
     enable = true;
     package = pkgs.vscodium;
-    extensions = with pkgs.vscode-extensions; [
+    extensions = with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
       ms-python.python
+      quarto.quarto
       redhat.ansible
       redhat.vscode-yaml
       reditorsupport.r

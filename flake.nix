@@ -10,6 +10,12 @@
     };
     # Declarative Nix Flatpaks
     nix-flatpak.url = "github:gmodena/nix-flatpak";
+
+    # VS Code extensions
+    nix-vscode-extensions = {
+      url = "github:nix-community/nix-vscode-extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -17,6 +23,7 @@
       nixpkgs,
       home-manager,
       nix-flatpak,
+      nix-vscode-extensions,
       ...
     }:
     let
@@ -31,6 +38,11 @@
           modules = [
             ./hosts/asus-dx.nix
             nix-flatpak.homeManagerModules.nix-flatpak
+            {
+              nixpkgs.overlays = [
+                nix-vscode-extensions.overlays.default
+              ];
+            }
           ];
         };
         ty = home-manager.lib.homeManagerConfiguration {
@@ -38,6 +50,11 @@
           modules = [
             ./hosts/ty.nix
             nix-flatpak.homeManagerModules.nix-flatpak
+            {
+              nixpkgs.overlays = [
+                nix-vscode-extensions.overlays.default
+              ];
+            }
           ];
         };
       };
