@@ -7,6 +7,7 @@
     ./cli/zsh.nix
     ./cli/starship.nix
     ./cli/R.nix
+    ./cli/bash.nix
     ./gui/vscodium.nix
   ];
 }
