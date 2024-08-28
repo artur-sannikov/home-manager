@@ -48,6 +48,8 @@
         "org.videolan.VLC"
         "org.zotero.Zotero"
         "org.kde.okular"
+        "org.inkscape.Inkscape"
+        "org.libreoffice.LibreOffice"
         {
           appId = "us.zoom.Zoom";
           origin = "flathub";
