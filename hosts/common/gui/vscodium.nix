@@ -8,6 +8,7 @@
       ms-python.python
       redhat.ansible
       redhat.vscode-yaml
+      REditorSupport.r
     ];
     userSettings = {
       # Font settings
