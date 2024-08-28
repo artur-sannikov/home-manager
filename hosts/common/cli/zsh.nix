@@ -10,6 +10,10 @@
         save = 10000;
         size = 10000;
       };
+      shellAliases = {
+        "l." = "ls -ldh .";
+        "l" = "ls -lh";
+      };
       oh-my-zsh = {
         enable = true;
         plugins = [
