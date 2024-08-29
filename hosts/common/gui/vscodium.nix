@@ -5,6 +5,7 @@
     package = pkgs.vscodium;
     extensions = with pkgs.vscode-marketplace; [
       jnoortheen.nix-ide
+      mkhl.direnv
       ms-python.python
       quarto.quarto
       redhat.ansible
