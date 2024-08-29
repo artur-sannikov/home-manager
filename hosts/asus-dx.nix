@@ -19,9 +19,6 @@
     nixfmt-rfc-style
     sox
     beets
-    mat2
-    ansible
-    ansible-lint
     mediainfo
   ];
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
