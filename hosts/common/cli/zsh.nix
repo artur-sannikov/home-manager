@@ -9,6 +9,9 @@
         path = "$HOME/.histfile";
         save = 10000;
         size = 10000;
+        expireDuplicatesFirst = true;
+        ignoreDups = true;
+        ignoreSpace = true;
       };
       shellAliases = {
         "l." = "ls -ldh .";
