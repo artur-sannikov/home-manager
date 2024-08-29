@@ -35,10 +35,12 @@
         "*.bu" = "yaml";
         "main.yml" = "ansible";
       };
-      # Disable RedHat telemetry
-      "redhat.telemetry.enabled" = false;
+      # Set default shell to zsh
+      "terminal.integrated.defaultProfile.linux" = "zsh";
       # Remove traling whitespace on save
       "files.trimTrailingWhitespace" = true;
+      # Disable RedHat telemetry
+      "redhat.telemetry.enabled" = false;
     };
   };
 }
