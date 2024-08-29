@@ -19,6 +19,7 @@
     mat2
     devbox
     gnumake
+    quarto
     nixfmt-rfc-style
     qt6.qtwayland
     kdePackages.kate
