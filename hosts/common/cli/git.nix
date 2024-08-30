@@ -5,6 +5,14 @@
       userName = "Artur Sannikov";
       userEmail = "40318410+artur-sannikov@users.noreply.github.com";
       extraConfig = {
+        init.defaultBranch = "main";
+        push.autoSetupRemote = true;
+        merge.conflictstyle = "zdiff";
+        credential.helper = "cache";
+        diff = {
+          algorithm = "histogram";
+          colorMoved = "default";
+        };
         url = {
           "git@github.com:" = {
             insteadOf = "https://github.com/";
@@ -14,6 +22,11 @@
         commit.gpgsign = "true";
         gpg.format = "ssh";
       };
+      ignores = [
+        ".DS_Store"
+        ".direnv/"
+        ".envrc"
+      ];
     };
   };
 }
