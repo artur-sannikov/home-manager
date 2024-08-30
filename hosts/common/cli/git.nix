@@ -7,7 +7,7 @@
       extraConfig = {
         init.defaultBranch = "main";
         push.autoSetupRemote = true;
-        merge.conflictstyle = "zdiff";
+        merge.conflictstyle = "zdiff3";
         credential.helper = "cache";
         diff = {
           algorithm = "histogram";
